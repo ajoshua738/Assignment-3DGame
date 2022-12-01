@@ -3,4 +3,12 @@
 
 Team Members :
 1. Adrian Joshua
-2. Alex 
+2. Alex Ong
+3. Ming Yan
+
+Game:
+FPS Horror Game
+
+Scenes:
+1. Outdoor house in a forest
+2. Interior of house
