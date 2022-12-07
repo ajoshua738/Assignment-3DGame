@@ -27,19 +27,21 @@ public class Doors : MonoBehaviour
 
 
 
-
+    //To show hint text UI
     void OnTriggerEnter(Collider other)
     {
+        //if player collide with door knob and the door is closed.
         if (other.gameObject.tag == "Reach" && doorisClosed)
         {
             inReach = true;
-            openText.SetActive(true);
+            openText.SetActive(true); //Open Door [E]
         }
 
+        //if player collide with door knob and the door is open.
         if (other.gameObject.tag == "Reach" && doorisOpen)
         {
             inReach = true;
-            closeText.SetActive(true);
+            closeText.SetActive(true);//Close Door [E]
         }
     }
 
@@ -61,6 +63,7 @@ public class Doors : MonoBehaviour
         doorisOpen = false;
         closeText.SetActive(false);
         openText.SetActive(false);
+        keyOB.SetActive(false);
     }
 
 
@@ -84,6 +87,7 @@ public class Doors : MonoBehaviour
         //if theres a key
         if (inReach && keyOB.activeInHierarchy && Input.GetButtonDown("Interact"))
         {
+            lockOB.SetActive(false);    
             unlockedSound.Play();
             locked = false;
             keyOB.SetActive(false);
