@@ -55,7 +55,7 @@ public class Flashlight : MonoBehaviour
 
         if (on)
         {
-            lifetime -= 1 * Time.deltaTime;
+            lifetime -= 0.1f * Time.deltaTime; //-0.1 every second
         }
 
         if (lifetime <= 0)
