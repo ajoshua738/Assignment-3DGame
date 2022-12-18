@@ -7,14 +7,17 @@ TagManager:
   - Ladder
   - Door
   - Reach
+  - Crawler
+  - Destination
+  - Monster
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 
