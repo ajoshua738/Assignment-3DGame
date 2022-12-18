@@ -13,6 +13,7 @@ public class MonsterAI : MonoBehaviour
     Vector3 destPoint;
     public float chaseTime;
     public float IdleTime;
+   
 
     // Start is called before the first frame update
     void Start()
