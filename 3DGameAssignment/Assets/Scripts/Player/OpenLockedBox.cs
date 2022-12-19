@@ -8,6 +8,7 @@ public class OpenLockedBox : MonoBehaviour
     public GameObject keyOBNeeded;
     public GameObject openText;
     public GameObject keyMissingText;
+    public GameObject lootItem;
     public AudioSource openSound;
 
     public bool inReach;
@@ -17,6 +18,7 @@ public class OpenLockedBox : MonoBehaviour
 
     void Start()
     {
+        lootItem.SetActive(false);
         inReach = false;
         openText.SetActive(false);
         keyMissingText.SetActive(false);
@@ -66,6 +68,7 @@ public class OpenLockedBox : MonoBehaviour
         {
             boxOB.GetComponent<BoxCollider>().enabled = false;
             boxOB.GetComponent<OpenLockedBox>().enabled = false;
+            lootItem.SetActive(true);
         }
     }
 }

@@ -27,7 +27,7 @@ public class MonsterAI : MonoBehaviour
         if (walking == true)
         {
             monster.destination = destPoint;
-            monster.speed = 1;
+            monster.speed = 2;
         }
 
         if (chasing == true)
