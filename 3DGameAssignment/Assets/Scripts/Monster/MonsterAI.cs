@@ -40,6 +40,8 @@ public class MonsterAI : MonoBehaviour
         {
             monster.speed = 0;
         }
+
+
     }
 
 
