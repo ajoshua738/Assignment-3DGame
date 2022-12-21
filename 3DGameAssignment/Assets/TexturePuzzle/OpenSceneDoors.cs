@@ -72,7 +72,7 @@ public class OpenSceneDoors : MonoBehaviour
 
     void DoorCloses()
     {
-        Debug.Log("It Closes");
+        //Debug.Log("It Closes");
         door.SetBool("Open", false);
         door.SetBool("Closed", true);
     }

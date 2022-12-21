@@ -5,18 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/OpenScene.unity
+    guid: cceed4250b4618343a8d3fb5cc3a1c8c
   - enabled: 1
     path: Assets/Scenes/OpenJumpScare.unity
     guid: 646990a717423a2429ca425a58b72d10
   - enabled: 1
     path: Assets/Scenes/VictoryScene.unity
     guid: d9c997a84c62c9b498c4c1ec9e03b480
-  - enabled: 0
-    path: Assets/Scenes/OpenScene.unity
-    guid: cceed4250b4618343a8d3fb5cc3a1c8c
   - enabled: 0
     path: Assets/Scenes/Puzzle_Item.unity
     guid: f26f4f1bdd8738e43a75fe4c933d84e9
