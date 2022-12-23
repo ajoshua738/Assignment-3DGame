@@ -11,7 +11,8 @@ public class DestinationTrigger : MonoBehaviour
         if (other.CompareTag("Monster"))
         {
             StartCoroutine(enableTrigger());
-            collision.enabled = false;  
+            collision.enabled = false;
+            
         }
     }
 

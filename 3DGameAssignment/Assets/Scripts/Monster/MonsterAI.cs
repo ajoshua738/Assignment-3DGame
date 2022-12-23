@@ -32,7 +32,8 @@ public class MonsterAI : MonoBehaviour
 
         if (chasing == true)
         {
-            monster.destination = playerTransform.position;
+            destPoint = playerTransform.position;
+            monster.destination = destPoint;
             monster.speed = 4;
         }
 
@@ -49,29 +50,52 @@ public class MonsterAI : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-
-
+            
             chasing = true;
             walking = false;
             idle = false;
             monsterAnimator.ResetTrigger("Idle");
             monsterAnimator.ResetTrigger("Walk");
             monsterAnimator.SetTrigger("Run");
-            StopCoroutine("nextDest");
-            StopCoroutine("chase");
-            StartCoroutine("chase");
+            StopCoroutine(nextDest());
+            StopCoroutine(chase());
+            StartCoroutine(chase());
+
+
+
+
+
         }
 
-        if (other.CompareTag("Destination"))
+        if (other.CompareTag("Destination") )
         {
+            Debug.Log("monster at destination");
             if (chasing == false)
             {
+
                 idle = true;
                 walking = false;
                 monsterAnimator.ResetTrigger("Walk");
                 monsterAnimator.SetTrigger("Idle");
-                StartCoroutine("nextDest");
+                StartCoroutine(nextDest());
+
             }
+
+            if(chasing == true)
+            {
+                chasing = true;
+                walking = false;
+                idle = false;
+                monsterAnimator.ResetTrigger("Idle");
+                monsterAnimator.ResetTrigger("Walk");
+                monsterAnimator.SetTrigger("Run");
+                StopCoroutine(nextDest());
+                StopCoroutine(chase());
+                StartCoroutine(chase());
+
+            }
+
+
         }
     }
 

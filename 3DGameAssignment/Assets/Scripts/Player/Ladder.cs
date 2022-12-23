@@ -57,6 +57,7 @@ public class Ladder : MonoBehaviour
         {
             player.transform.position += Vector3.up /
             speed * Time.deltaTime;
+
         }
 
         if (inside == true && Input.GetKey("s"))

@@ -1,61 +1,97 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class PauseGame : MonoBehaviour
 {
-    public GameObject menu;
-    public GameObject resume;
-    public GameObject quit;
 
-    public bool on;
-    public bool off;
+    public static bool GameIsPaused = false;
+    private int levelToLoadIndex;
+    public GameObject pauseMenuUI;
+    public FirstPersonController player;
+    
+   
 
+  
 
-
-
-
+    // Start is called before the first frame update
     void Start()
     {
-        menu.SetActive(false);
-        off = true;
-        on = false;
+        player = GameObject.FindWithTag("Player").GetComponent<FirstPersonController>();
+        pauseMenuUI.SetActive(false);
+        
     }
 
-
-
-
+    // Update is called once per frame
     void Update()
     {
-        if (off && Input.GetButtonDown("Pause"))
+        if (Input.GetButtonDown("Escape"))
         {
-            Time.timeScale = 0;
-            menu.SetActive(true);
-            off = false;
-            on = true;
+            if (GameIsPaused)
+            {
+               Resume();
+            }
+            else
+            {
+                Pause();
+            }
         }
-
-        else if (on && Input.GetButtonDown("Pause"))
-        {
-            Time.timeScale = 1;
-            menu.SetActive(false);
-            off = true;
-            on = false;
-        }
-
     }
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(3.0f);
+    }
+
 
     public void Resume()
     {
+
+        player.enabled = true;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        GameIsPaused = false;
+        pauseMenuUI.SetActive(false);
         Time.timeScale = 1;
-        menu.SetActive(false);
-        off = true;
-        on = false;
+       
 
     }
 
-    public void Exit()
+    void Pause()
     {
+
+        player.enabled = false;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        GameIsPaused = true;
+        pauseMenuUI.SetActive(true);
+        Time.timeScale = 0;
+        
+       
+
+
+    }
+
+    public void LoadMainMenu()
+    {
+        GameIsPaused = false;
+        Time.timeScale = 1;
+        Resume();
+        
+        levelToLoadIndex = 0;
+
+        
+        SceneManager.LoadScene(levelToLoadIndex);
+        
+
+    }
+
+    public void Quit()
+    {
+        StartCoroutine(Wait());
         Application.Quit();
+        Debug.Log("deez nuts");
     }
 }
