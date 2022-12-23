@@ -54,7 +54,7 @@ public class OpenCabinet : MonoBehaviour
 
     void CabinetOpens()
     {
-        Debug.Log("It Opens");
+    
         cabinet.SetBool("Open", true);
         cabinet.SetBool("Closed", false);
         cabinetSound.Play();
@@ -64,7 +64,7 @@ public class OpenCabinet : MonoBehaviour
 
     void CabinetCloses()
     {
-        //Debug.Log("It Closes");
+
         cabinet.SetBool("Open", false);
         cabinet.SetBool("Closed", true);
     }
