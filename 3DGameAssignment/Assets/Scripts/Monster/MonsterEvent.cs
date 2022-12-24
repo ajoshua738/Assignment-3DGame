@@ -8,7 +8,7 @@ public class MonsterEvent : MonoBehaviour
     public GameObject monsterSkin;
     public GameObject monsterObj;
     public GameObject eventTrigger;
-    float timer = 1.0f;
+    public float timer;
  
 
 
@@ -30,7 +30,7 @@ public class MonsterEvent : MonoBehaviour
         }
         if (monsterSkin.activeInHierarchy)
         {
-            timer -= 0.5f * Time.deltaTime;
+            timer -= 1f * Time.deltaTime;
 
 
         }

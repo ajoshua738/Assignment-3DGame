@@ -2,24 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Flashlight : MonoBehaviour
 {
     public Light light;
-    public TMP_Text text;
+    public TMP_Text lifetimeText;
 
     public TMP_Text batteryText;
 
-    public float lifetime = 100;
+    public  float lifetime = 100;
 
     public float batteries = 0;
 
     public AudioSource flashON;
     public AudioSource flashOFF;
 
+
+   
+
     private bool on;
     private bool off;
 
+
+    
 
     void Start()
     {
@@ -28,13 +34,18 @@ public class Flashlight : MonoBehaviour
         off = true;
         light.enabled = false;
 
+       
+
+        
     }
 
 
 
     void Update()
     {
-        text.text = lifetime.ToString("0") + "%";
+
+        
+        lifetimeText.text = lifetime.ToString("0") + "%";
         batteryText.text = batteries.ToString();
 
         if (Input.GetButtonDown("Flashlight") && off)
@@ -55,7 +66,7 @@ public class Flashlight : MonoBehaviour
 
         if (on)
         {
-            lifetime -= 0.1f * Time.deltaTime; //-0.1 every second
+            lifetime -= 0.5f * Time.deltaTime; //-0.1 every second
         }
 
         if (lifetime <= 0)
