@@ -519,7 +519,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: suddenly appear unexplained disappearances
+  m_Text: There's a house
 --- !u!222 &22207333
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -563,8 +563,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7, y: -381}
-  m_SizeDelta: {x: 540.3563, y: 69.8279}
+  m_AnchoredPosition: {x: 60.118896, y: -381}
+  m_SizeDelta: {x: 1754.2826, y: 69.8279}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &29086796
 MonoBehaviour:
@@ -599,7 +599,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: but he has long abandoned
+  m_Text: I believe this house is linked to these disappearances
 --- !u!222 &29086797
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6090,7 +6090,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: We need your ability
+  m_Text: See what you can find out
 --- !u!222 &452394166
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8070,7 +8070,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hello, Mr Jothan
+  m_Text: Johnathan
 --- !u!222 &644896017
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10875,8 +10875,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.3278, y: -381}
-  m_SizeDelta: {x: 683.4999, y: 69.8279}
+  m_AnchoredPosition: {x: 96.25647, y: -381}
+  m_SizeDelta: {x: 1045.5687, y: 69.8279}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &837681564
 MonoBehaviour:
@@ -10911,7 +10911,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: I think that you already know
+  m_Text: There have been strange disappearances
 --- !u!222 &837681565
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16761,8 +16761,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7, y: -381}
-  m_SizeDelta: {x: 540.3563, y: 69.8279}
+  m_AnchoredPosition: {x: 1.4564, y: -381}
+  m_SizeDelta: {x: 1257.5923, y: 69.8279}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1299040886
 MonoBehaviour:
@@ -16797,7 +16797,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: what happen in the recent
+  m_Text: occurring in our town
 --- !u!222 &1299040887
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17202,7 +17202,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: which owned by culy worshippers
+  m_Text: to perform rituals
 --- !u!222 &1315181418
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20938,8 +20938,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7, y: -381}
-  m_SizeDelta: {x: 540.3563, y: 69.8279}
+  m_AnchoredPosition: {x: 8.0168, y: -381}
+  m_SizeDelta: {x: 743.9159, y: 69.8279}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1578392944
 MonoBehaviour:
@@ -20974,7 +20974,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: I want you to find the truth
+  m_Text: that has long been abandoned
 --- !u!222 &1578392945
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21838,7 +21838,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'We don''t know what hapenning inside '
+  m_Text: "We don't know what happening inside \r\n"
 --- !u!222 &1638933064
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24923,8 +24923,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7, y: -381}
-  m_SizeDelta: {x: 540.3563, y: 69.8279}
+  m_AnchoredPosition: {x: 73.08887, y: -381}
+  m_SizeDelta: {x: 1204.4271, y: 69.8279}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1875058438
 MonoBehaviour:
@@ -24959,7 +24959,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'yes... our town '
+  m_Text: ' I want you to investigate these cases'
 --- !u!222 &1875058439
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25742,8 +25742,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7, y: -381}
-  m_SizeDelta: {x: 540.3563, y: 69.8279}
+  m_AnchoredPosition: {x: 53.06671, y: -381}
+  m_SizeDelta: {x: 944.1381, y: 69.8279}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1940530382
 MonoBehaviour:
@@ -25778,7 +25778,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: We have found a house
+  m_Text: It was once used by cult worshippers
 --- !u!222 &1940530383
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27503,6 +27503,14 @@ PlayableDirector:
     value: {fileID: 1638933061}
   - key: {fileID: 4817058210493015483, guid: b5d0eb0297b61cc4ca00ded7580aff5f, type: 2}
     value: {fileID: 389160932}
+  - key: {fileID: 4159663807506253520, guid: b5d0eb0297b61cc4ca00ded7580aff5f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 5297434721897964924, guid: b5d0eb0297b61cc4ca00ded7580aff5f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -5244060988879490629, guid: b5d0eb0297b61cc4ca00ded7580aff5f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 6233113530922956622, guid: b5d0eb0297b61cc4ca00ded7580aff5f, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &2075214875

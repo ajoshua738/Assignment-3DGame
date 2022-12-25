@@ -3347,10 +3347,10 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 3.3833333333333333
+    m_Start: 3.433333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 3630697015988334961}
-    m_Duration: 1.0000000000000004
+    m_Duration: 1.9666666666666663
     m_TimeScale: 1
     m_ParentTrack: {fileID: 304981326575909176}
     m_EaseInDuration: 0
@@ -3413,7 +3413,7 @@ MonoBehaviour:
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: Infinity
-    m_PreExtrapolationTime: 3.3833333333333333
+    m_PreExtrapolationTime: 3.433333333333333
     m_DisplayName: Idle
   m_Markers:
     m_Objects: []

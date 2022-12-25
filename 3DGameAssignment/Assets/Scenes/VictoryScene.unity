@@ -2617,7 +2617,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Directed by
 
-    Nutt XD'
+    Adrian Joshua'
 --- !u!222 &179987682
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4275,7 +4275,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nutt XD
+  m_Text: Adrian Joshua
 --- !u!222 &317899168
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10483,7 +10483,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Produced by
 
-    RockSora'
+    Ming Yan'
 --- !u!222 &800447465
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15739,12 +15739,12 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1493551588}
+    m_TransformParent: {fileID: 1756821789}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cc512c5ffc88a8f49baaba4930f074f8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cc512c5ffc88a8f49baaba4930f074f8,
         type: 3}
@@ -15804,7 +15804,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: cc512c5ffc88a8f49baaba4930f074f8,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cc512c5ffc88a8f49baaba4930f074f8,
         type: 3}
@@ -15827,6 +15827,12 @@ Transform:
 --- !u!1 &1195247087 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cc512c5ffc88a8f49baaba4930f074f8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1195247085}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1195247088 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: cc512c5ffc88a8f49baaba4930f074f8,
     type: 3}
   m_PrefabInstance: {fileID: 1195247085}
   m_PrefabAsset: {fileID: 0}
@@ -20096,7 +20102,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1561146550}
-  - {fileID: 1195247086}
   m_Father: {fileID: 0}
   m_RootOrder: 391
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -22328,7 +22333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609871474}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 165.06, y: 2.91, z: 168.61}
+  m_LocalPosition: {x: 164.954, y: 2.556, z: 167.695}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23498,7 +23503,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RockSora
+  m_Text: Ming Yan
 --- !u!222 &1693775707
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26217,6 +26222,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2224b63330275e5478ef024b2913f937, type: 3}
+--- !u!1 &1756821788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1756821789}
+  m_Layer: 0
+  m_Name: Enemt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1756821789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756821788}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 164.91, y: 0.79, z: 167.83}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1195247086}
+  m_Father: {fileID: 0}
+  m_RootOrder: 392
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &1760366732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26916,7 +26953,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: THE HELL ROOM
+  m_Text: THE HELL HOUSE
 --- !u!222 &1815912490
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28358,6 +28395,18 @@ PlayableDirector:
     value: {fileID: 1561146551}
   - key: {fileID: 6396941023605768556, guid: 3e0fe3ddc59790342a7878e71e4ea964, type: 2}
     value: {fileID: 1561146552}
+  - key: {fileID: -3349660897726562040, guid: 3e0fe3ddc59790342a7878e71e4ea964, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 352642731730764484, guid: 3e0fe3ddc59790342a7878e71e4ea964, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 5306503079610439423, guid: 3e0fe3ddc59790342a7878e71e4ea964, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 304981326575909176, guid: 3e0fe3ddc59790342a7878e71e4ea964, type: 2}
+    value: {fileID: 1195247088}
+  - key: {fileID: -3473454392378508304, guid: 3e0fe3ddc59790342a7878e71e4ea964, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 8314348057421731581, guid: 3e0fe3ddc59790342a7878e71e4ea964, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1920896528
