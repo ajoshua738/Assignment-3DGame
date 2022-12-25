@@ -15734,6 +15734,102 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2224b63330275e5478ef024b2913f937, type: 3}
+--- !u!1001 &1195247085
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1493551588}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: cc512c5ffc88a8f49baaba4930f074f8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cc512c5ffc88a8f49baaba4930f074f8,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cc512c5ffc88a8f49baaba4930f074f8,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cc512c5ffc88a8f49baaba4930f074f8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cc512c5ffc88a8f49baaba4930f074f8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cc512c5ffc88a8f49baaba4930f074f8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cc512c5ffc88a8f49baaba4930f074f8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.54
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cc512c5ffc88a8f49baaba4930f074f8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cc512c5ffc88a8f49baaba4930f074f8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cc512c5ffc88a8f49baaba4930f074f8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cc512c5ffc88a8f49baaba4930f074f8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cc512c5ffc88a8f49baaba4930f074f8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cc512c5ffc88a8f49baaba4930f074f8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cc512c5ffc88a8f49baaba4930f074f8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cc512c5ffc88a8f49baaba4930f074f8,
+        type: 3}
+      propertyPath: m_Name
+      value: Whiteclown N Hallin (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc512c5ffc88a8f49baaba4930f074f8, type: 3}
+--- !u!4 &1195247086 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cc512c5ffc88a8f49baaba4930f074f8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1195247085}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1195247087 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cc512c5ffc88a8f49baaba4930f074f8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1195247085}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1203282959
 GameObject:
   m_ObjectHideFlags: 0
@@ -20000,6 +20096,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1561146550}
+  - {fileID: 1195247086}
   m_Father: {fileID: 0}
   m_RootOrder: 391
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -28256,7 +28353,7 @@ PlayableDirector:
   - key: {fileID: -5736651783903561831, guid: 3e0fe3ddc59790342a7878e71e4ea964, type: 2}
     value: {fileID: 2059152730}
   - key: {fileID: -9028260406912356684, guid: 3e0fe3ddc59790342a7878e71e4ea964, type: 2}
-    value: {fileID: 1990557922}
+    value: {fileID: 1195247087}
   - key: {fileID: 1561568595532457399, guid: 3e0fe3ddc59790342a7878e71e4ea964, type: 2}
     value: {fileID: 1561146551}
   - key: {fileID: 6396941023605768556, guid: 3e0fe3ddc59790342a7878e71e4ea964, type: 2}
@@ -29367,14 +29464,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Whiteclown N Hallin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cc512c5ffc88a8f49baaba4930f074f8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc512c5ffc88a8f49baaba4930f074f8, type: 3}
---- !u!1 &1990557922 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cc512c5ffc88a8f49baaba4930f074f8,
-    type: 3}
-  m_PrefabInstance: {fileID: 1990557921}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1990763685
 PrefabInstance:
   m_ObjectHideFlags: 0
