@@ -5,10 +5,11 @@ using UnityEngine;
 public class DestinationTrigger : MonoBehaviour
 {
     public Collider collision;
+    string monsterTag = "Monster";
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Monster"))
+        if (other.CompareTag(monsterTag))
         {
             StartCoroutine(enableTrigger());
             collision.enabled = false;

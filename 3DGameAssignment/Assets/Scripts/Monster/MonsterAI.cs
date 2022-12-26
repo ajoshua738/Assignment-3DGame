@@ -13,7 +13,9 @@ public class MonsterAI : MonoBehaviour
     Vector3 destPoint;
     public float chaseTime;
     public float IdleTime;
-   
+
+    string playerTag = "Player";
+    string destTag = "Destination";
 
     // Start is called before the first frame update
     void Start()
@@ -48,7 +50,7 @@ public class MonsterAI : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag(playerTag))
         {
             
             chasing = true;
@@ -67,7 +69,7 @@ public class MonsterAI : MonoBehaviour
 
         }
 
-        if (other.CompareTag("Destination") )
+        if (other.CompareTag(destTag) )
         {
             Debug.Log("monster at destination");
             if (chasing == false)

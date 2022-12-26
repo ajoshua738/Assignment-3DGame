@@ -10,8 +10,8 @@ public class PickUpKey : MonoBehaviour
     public AudioSource keySound;
 
     public bool inReach;
-
-
+    string reachTag = "Reach";
+    string interactKey = "Interact";
     void Start()
     {
         inReach = false;
@@ -22,7 +22,7 @@ public class PickUpKey : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Reach")
+        if (other.gameObject.tag == reachTag)
         {
             inReach = true;
             pickUpText.SetActive(true);
@@ -32,7 +32,7 @@ public class PickUpKey : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Reach")
+        if (other.gameObject.tag == reachTag)
         {
             inReach = false;
             pickUpText.SetActive(false);
@@ -43,12 +43,13 @@ public class PickUpKey : MonoBehaviour
 
     void Update()
     {
-        if (inReach && Input.GetButtonDown("Interact"))
+        if (inReach && Input.GetButtonDown(interactKey))
         {
             keyOB.SetActive(false);
             keySound.Play();
             invOB.SetActive(true);
             pickUpText.SetActive(false);
+           
         }
 
 

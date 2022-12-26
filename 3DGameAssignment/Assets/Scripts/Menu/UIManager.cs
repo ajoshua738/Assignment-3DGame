@@ -39,17 +39,14 @@ public class UIManager : MonoBehaviour
 
   
 
-    IEnumerator Wait()
-    {
-        yield return new WaitForSeconds(3.0f);
-    }
+    
 
     public void PlayBtnClicked()
     {
         levelToLoadIndex = 1;
-       
-        StartCoroutine(Wait());
         SceneManager.LoadScene(levelToLoadIndex);
+    
+        
     }
 
 
@@ -75,8 +72,8 @@ public class UIManager : MonoBehaviour
     {
 
        
-        StartCoroutine(Wait());
+     
         Application.Quit();
-        Debug.Log("deez nuts");
+      
     }
 }

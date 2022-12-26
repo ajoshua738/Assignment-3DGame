@@ -10,17 +10,21 @@ public class BatteryPickUp : MonoBehaviour
     private GameObject flashlight;
 
     public AudioSource pickUpSound;
+    string reachTag = "Reach";
+    string flashlightOB = "Flashlight";
+
+    string interactKey = "Interact";
 
     void Start()
     {
         inReach = false;
         pickUpText.SetActive(false);
-        flashlight = GameObject.Find("Flashlight");
+        flashlight = GameObject.Find(flashlightOB);
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Reach")
+        if (other.gameObject.tag == reachTag)
         {
             inReach = true;
             pickUpText.SetActive(true);
@@ -30,7 +34,7 @@ public class BatteryPickUp : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Reach")
+        if (other.gameObject.tag == reachTag)
         {
             inReach = false;
             pickUpText.SetActive(false);
@@ -42,7 +46,7 @@ public class BatteryPickUp : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Interact") && inReach)
+        if (Input.GetButtonDown(interactKey) && inReach)
         {
             flashlight.GetComponent<Flashlight>().batteries += 1;
             pickUpSound.Play();

@@ -24,7 +24,8 @@ public class Flashlight : MonoBehaviour
     private bool on;
     private bool off;
 
-
+    string flashlightKey = "Flashlight";
+    string reloadKey = "Reload";
     
 
     void Start()
@@ -48,7 +49,7 @@ public class Flashlight : MonoBehaviour
         lifetimeText.text = lifetime.ToString("0") + "%";
         batteryText.text = batteries.ToString();
 
-        if (Input.GetButtonDown("Flashlight") && off)
+        if (Input.GetButtonDown(flashlightKey) && off)
         {
             flashON.Play();
             light.enabled = true;
@@ -56,7 +57,7 @@ public class Flashlight : MonoBehaviour
             off = false;
         }
 
-        else if (Input.GetButtonDown("Flashlight") && on)
+        else if (Input.GetButtonDown(flashlightKey) && on)
         {
             flashOFF.Play();
             light.enabled = false;
@@ -82,13 +83,13 @@ public class Flashlight : MonoBehaviour
             lifetime = 100;
         }
 
-        if (Input.GetButtonDown("Reload") && batteries >= 1)
+        if (Input.GetButtonDown(reloadKey) && batteries >= 1)
         {
             batteries -= 1;
             lifetime += 50;
         }
 
-        if (Input.GetButtonDown("Reload") && batteries == 0)
+        if (Input.GetButtonDown(reloadKey) && batteries == 0)
         {
             return;
         }

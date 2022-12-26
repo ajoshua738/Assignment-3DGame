@@ -14,6 +14,9 @@ public class OpenLockedBox : MonoBehaviour
     public bool inReach;
     public bool isOpen;
 
+    string reachTag = "Reach";
+    string interactKey = "Interact";
+  
 
 
     void Start()
@@ -27,7 +30,7 @@ public class OpenLockedBox : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Reach")
+        if (other.gameObject.tag == reachTag)
         {
             inReach = true;
             openText.SetActive(true);
@@ -37,7 +40,7 @@ public class OpenLockedBox : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Reach")
+        if (other.gameObject.tag == reachTag)
         {
             inReach = false;
             openText.SetActive(false);
@@ -48,7 +51,7 @@ public class OpenLockedBox : MonoBehaviour
 
     void Update()
     {
-        if (keyOBNeeded.activeInHierarchy == true && inReach && Input.GetButtonDown("Interact"))
+        if (keyOBNeeded.activeInHierarchy == true && inReach && Input.GetButtonDown(interactKey))
         {
             keyOBNeeded.SetActive(false);
             openSound.Play();
@@ -58,7 +61,7 @@ public class OpenLockedBox : MonoBehaviour
             isOpen = true;
         }
 
-        else if (keyOBNeeded.activeInHierarchy == false && inReach && Input.GetButtonDown("Interact"))
+        else if (keyOBNeeded.activeInHierarchy == false && inReach && Input.GetButtonDown(interactKey))
         {
             openText.SetActive(false);
             keyMissingText.SetActive(true);

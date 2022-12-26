@@ -8,8 +8,8 @@ public class PlayScarySound : MonoBehaviour
 
     public AudioSource scarySound;
     public GameObject soundTrigger;
-    
 
+    string playerTag = "Player";
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +25,7 @@ public class PlayScarySound : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == playerTag)
         {
           scarySound.Play();
       

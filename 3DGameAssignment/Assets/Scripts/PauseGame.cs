@@ -12,15 +12,15 @@ public class PauseGame : MonoBehaviour
     private int levelToLoadIndex;
     public GameObject pauseMenuUI;
     public FirstPersonController player;
-    
-   
+
+    string playerTag = "Player";
 
   
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindWithTag("Player").GetComponent<FirstPersonController>();
+        player = GameObject.FindWithTag(playerTag).GetComponent<FirstPersonController>();
         pauseMenuUI.SetActive(false);
         
     }
@@ -40,11 +40,7 @@ public class PauseGame : MonoBehaviour
             }
         }
     }
-    IEnumerator Wait()
-    {
-        yield return new WaitForSeconds(3.0f);
-    }
-
+ 
 
     public void Resume()
     {
@@ -82,7 +78,6 @@ public class PauseGame : MonoBehaviour
         
         levelToLoadIndex = 0;
 
-        
         SceneManager.LoadScene(levelToLoadIndex);
         
 
@@ -90,8 +85,8 @@ public class PauseGame : MonoBehaviour
 
     public void Quit()
     {
-        StartCoroutine(Wait());
+        
         Application.Quit();
-        Debug.Log("deez nuts");
+      
     }
 }

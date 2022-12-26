@@ -8,8 +8,8 @@ public class OpenKeyPad : MonoBehaviour
     public GameObject keypadText;
 
     public bool inReach;
-
-
+    string reachTag = "Reach";
+    string interactKey = "Interact";
     void Start()
     {
         inReach = false;
@@ -17,7 +17,7 @@ public class OpenKeyPad : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Reach")
+        if (other.gameObject.tag == reachTag)
         {
             inReach = true;
             keypadText.SetActive(true);
@@ -27,7 +27,7 @@ public class OpenKeyPad : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Reach")
+        if (other.gameObject.tag == reachTag)
         {
             inReach = false;
             keypadText.SetActive(false);
@@ -40,7 +40,7 @@ public class OpenKeyPad : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Interact") && inReach)
+        if (Input.GetButtonDown(interactKey) && inReach)
         {
             keypadOB.SetActive(true);
         }

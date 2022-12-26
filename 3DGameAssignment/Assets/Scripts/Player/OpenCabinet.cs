@@ -12,8 +12,9 @@ public class OpenCabinet : MonoBehaviour
     public AudioSource cabinetSound;
     public GameObject invOB;
 
-
+    string reachTag = "Reach";
     public bool inReach;
+    string interactKey = "Interact";
 
     void Start()
     {
@@ -23,7 +24,7 @@ public class OpenCabinet : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Reach")
+        if (other.gameObject.tag == reachTag)
         {
             inReach = true;
             openText.SetActive(true);
@@ -32,7 +33,7 @@ public class OpenCabinet : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Reach")
+        if (other.gameObject.tag == reachTag)
         {
             inReach = false;
             openText.SetActive(false);
@@ -43,7 +44,7 @@ public class OpenCabinet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (inReach && Input.GetButtonDown("Interact"))
+        if (inReach && Input.GetButtonDown(interactKey))
         {
             CabinetOpens();
         }

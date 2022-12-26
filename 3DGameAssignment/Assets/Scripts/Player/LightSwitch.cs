@@ -19,6 +19,9 @@ public class LightSwitch : MonoBehaviour
     public bool lightsAreOff;
     public bool inReach;
 
+    string reachTag = "Reach";
+
+    string interactKey = "Interact";
 
     void Start()
     {
@@ -34,7 +37,7 @@ public class LightSwitch : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Reach")
+        if (other.gameObject.tag == reachTag)
         {
             inReach = true;
             lightsText.SetActive(true);
@@ -43,7 +46,7 @@ public class LightSwitch : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Reach")
+        if (other.gameObject.tag == reachTag)
         {
             inReach = false;
             lightsText.SetActive(false);
@@ -54,7 +57,7 @@ public class LightSwitch : MonoBehaviour
 
     void Update()
     {
-        if (lightsAreOn && inReach && Input.GetButtonDown("Interact"))
+        if (lightsAreOn && inReach && Input.GetButtonDown(interactKey))
         {
             lightOB.SetActive(false);
             onOB.SetActive(false);
@@ -64,7 +67,7 @@ public class LightSwitch : MonoBehaviour
             lightsAreOn = false;
         }
 
-        else if (lightsAreOff && inReach && Input.GetButtonDown("Interact"))
+        else if (lightsAreOff && inReach && Input.GetButtonDown(interactKey))
         {
             lightOB.SetActive(true);
             onOB.SetActive(true);
