@@ -9,13 +9,14 @@ public class PlayerObjective : MonoBehaviour
     public GameObject item1,item2,item3,item4,item5;
     
     public TMP_Text itemCountText;
-    float noItems = 0;
+    public float noItems = 0;
 
+  
 
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame

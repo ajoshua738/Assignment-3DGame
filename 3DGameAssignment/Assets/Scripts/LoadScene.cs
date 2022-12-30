@@ -8,8 +8,9 @@ public class LoadScene : MonoBehaviour
 
     //public string LevelName;
     public int sceneIndex;
+  
    
-
+   
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class LoadScene : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+           
             SceneManager.LoadScene(sceneIndex);
 
         }

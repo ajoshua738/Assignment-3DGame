@@ -11,6 +11,7 @@ public class OffsetFlashlight : MonoBehaviour
 
     void Start()
     {
+
         goFollow = Camera.main.gameObject;
         vectOffset = transform.position - goFollow.transform.position;
     }

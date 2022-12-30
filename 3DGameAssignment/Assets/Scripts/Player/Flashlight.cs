@@ -11,7 +11,7 @@ public class Flashlight : MonoBehaviour
 
     public TMP_Text batteryText;
 
-    public  float lifetime = 100;
+    public float lifetime = 100;
 
     public float batteries = 0;
 
@@ -30,21 +30,21 @@ public class Flashlight : MonoBehaviour
 
     void Start()
     {
+       
         light = GetComponent<Light>();
 
         off = true;
         light.enabled = false;
-
-       
-
+ 
         
+
     }
 
 
 
     void Update()
     {
-
+      
         
         lifetimeText.text = lifetime.ToString("0") + "%";
         batteryText.text = batteries.ToString();
